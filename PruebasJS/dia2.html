@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicios Dia 2</title>
+    </head>
+
+    <body>
+        <h1>Ejercicios del dia 2: </h1>
+        <script>
+            console.log("---------- Ejercicios Nivel 1 ----------");
+            //Ej 1
+            let desafio = "30 dias de JavaScript" ;
+            //Ej 2
+            console.log(desafio);
+            //Ej 3
+            console.log(desafio.length);
+            //Ej 4
+            console.log(desafio.toUpperCase());
+            //Ej 5
+            console.log(desafio.toLowerCase());
+            //Ej 6
+            console.log(desafio.substr(3,4));
+            //Ej 7
+            console.log(desafio.substr(0, 3));
+            //Ej 8
+            console.log(desafio.includes("Script"));
+            //Ej 9
+            console.log(desafio.split());
+            //Ej 10
+            console.log(desafio.split(" "));
+            //Ej 11
+            let empresas = "Facebook, Google, Microoft, Apple, IBM, Oracle, Amazon";
+            console.log(empresas.split(","));
+            //Ej 12
+            console.log(desafio. replace("JavaScript", "Python"));
+            //Ej 13
+            console.log(desafio.charAt(15));
+            //Ej 14
+            console.log(desafio.charCodeAt("J"));
+            //Ej 15
+            console.log(desafio.indexOf("a"));
+            //Ej 16
+            console.log(desafio.lastIndexOf("a"));
+            //Ej 17
+            let frase = "No puedes terminar una oración con porque porque porque es una conjunción";
+            console.log("Primer posicion de la palabra 'porque' --> ", frase.indexOf("porque"));
+            //Ej 18
+            console.log("Ultima posicion de la palabra 'porque' --> ", frase.lastIndexOf("porque"));
+            //Ej 19
+            console.log("Primer aparicion de la palabra 'porque' (con search) --> ", frase.search("porque"));
+            //Ej 20
+            console.log(desafio.trim(" "));
+            //Ej 21
+            console.log("¿La frase empieza con el número 3? --> ", desafio.startsWith("3"));
+            //Ej 22
+            console.log("¿La frase termina con la letra 't'? --> ", desafio.endsWith("t"));
+            //Ej 23
+            console.log("¿Cuantas letras 'a' tiene la frase? --> ", desafio.match(/a/gi));
+            //Ej 24
+            let frase1 = "30 días de ";
+            let frase2 = "JavaScript";
+            console.log(frase1.concat(frase2));
+            //Ej 25
+            console.log(desafio.repeat(2));
+            //Fin ejercicios nivel 1
+            console.log("--------------------");
+            console.log("---------- Ej nivel 2 ----------");
+            //Ej 1
+            console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.");
+            //Ej 2
+            console.log("''Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.''");
+            //Ej 3
+            console.log(typeof '10' === typeof '10');
+            //Ej 4
+            console.log(parseFloat('9.8') === parseFloat('9.8'));
+            //Ej 5
+            let py = "Python";
+            let jer = "jerga";
+            console.log(py.includes("on") && jer.includes("on"));
+            //Ej 6
+            let fraseCurso = "Espero que este curso no esté lleno de jerga";
+            console.log(fraseCurso.includes("jargon"));
+            //Ej 7
+            let numRandom = Math.random()
+            console.log(Math.floor(numRandom * 101));
+            //Ej 8
+            console.log(Math.floor(numRandom * 101));
+            //Ej 11
+            console.log("1 1 1 1 1 \n2 1 2 4 8 \n3 1 3 9 27 \n4 1 4 16 64\n5 1 5 25 125");
+            //Ej 12
+            console.log(frase.indexOf("porque"));
+            console.log(frase.lastIndexOf("porque"))
+            console.log(frase.substr(0, frase.indexOf("porque")), frase.substr(frase.lastIndexOf("e") - 1, frase.length - 1));
+            //Fin ejercicios nivel 2
+            console.log("--------------------");
+            console.log("---------- Ej nivel 3 ----------");
+            //Ej 1
+            let fraseFinal = "El amor es lo mejor ue hay en este mundo. Algunos encontraron su amor y otros todavía están buscando su amor";
+            console.log("Cantidad de veces que aparece la palabra 'amor' en la frase --> ", fraseFinal.match(/amor/gi))
+            //Ej 2
+            console.log("Cantidad de veces que aparece la palabra 'porque' en la frase --> ", frase.match(/porque/gi))
+            //Ej 3
+            let sentencia = "%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching";
+            console.log(sentencia.replace(/[^\w\s]/g, ""));
+            //Ej 4
+            let fraseFinal3 = "Él gana 5000 euros de salario por mes, bono anual de 10000 euros, cursos en línea de 15000 euros por mes."
+            let numeros = fraseFinal3.match(/\d+/g);
+            let salarioMes = parseInt(numeros[0]) * 12;
+            let anual = parseInt([1]);
+            let cursoMensual = parseInt([2]) * 12;
+            let salario = salarioMes + anual + cursoMensual
+            console.log("El salario mensual es de --> $", salario)
+            
+
+
+        </script>
+    </body>
+</html>

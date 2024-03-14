@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+   <head>
+     <title>30DíasDeJS:Inline Script</title>
+    
+   </head>
+
+ 
+
+   <body>
+     <button onclick="alert('Bienvenido a 30DaysOfJavaScript!')">Hazme Click</button>
+     <script>
+        console.log("Bienvenido a 30DaysOfJavaScript!")
+        //los comentarios pueden hacer que el codigo sea legible
+        // Bienvenido a 30DaysOfJavaScript
+        /* Los comentarios pueden hacer el codigo 
+        legible , facil de usar e informativo */
+        
+        //Ejercicio 10 dia 1
+
+        let miEdad = 20;
+        let tuEdad = 30;
+        console.log("Tengo ", miEdad, " años.");
+        console.log("Tu tienes ", tuEdad, " años.");
+        console.log(`${miEdad} es mayor a ${tuEdad} = ${miEdad > tuEdad}`);
+        let nombre = "Valentina";
+        let primerLetra = nombre[0];
+        let ultimaLetra = nombre.length - 1;
+        console.log(primerLetra)
+        console.log(nombre[ultimaLetra]);
+        console.log(nombre.substr(5, 4))
+        console.log(nombre.split(", "))
+        console.log(nombre.includes("ntin"))
+        console.log(nombre.replace("Valen", "Cama"))
+        console.log(nombre.startsWith("Val"));
+        console.log(nombre.startsWith("Tin"))
+    </script>
+   </body>
+</html>
