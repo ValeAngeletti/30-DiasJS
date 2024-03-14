@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicios día 3</title>
+    </head>
+
+    <body>
+        <h1>Ejercicios Día 3:</h1>
+
+        <script>
+            //Objeto de tiempo
+            const now = new Date();
+            console.log(now)
+            //Año completo
+            console.log(now.getFullYear())
+            //Formateando valores
+            const year = now.getFullYear();
+            const mes = now.getMonth() + 1;
+            const dia = now.getDate();
+            const horas = now.getHours();
+            const mins = now.getMinutes();
+
+            console.log(`${dia}/${mes}/${year} ${horas}:${mins}`)
+            //-----------------------------
+            console.log("INICIO EJERCITACIÓN:")
+            //Ej 1;
+            let nombre = typeof "Valentina";
+            let apellido = typeof "Angeletti";
+            let pais = typeof "Argentina";
+            let ciudad = typeof "Córdoba";
+            let edad = typeof 20;
+            let casadoPregunta = typeof false;
+            let año = typeof 2024;
+            console.log(nombre, apellido, pais, ciudad, edad, casadoPregunta, año);
+            //Ej 2/ 3 hechos en el dia 2
+            //Ej 4.1
+            let verdadero = 3 < 6;
+            let verdadero2 = 5 === 5;
+            let verdadero3 = 2 > 1;
+            console.log(verdadero, verdadero2, verdadero3);
+            //Ej 4.2
+            let falso = 5 < 2;
+            let falso2 = 6 != 6;
+            let falso3 = 9 === 2;
+            console.log(falso, falso2, falso3)
+            //Ejs 5
+            let uno = 4 > 3; //true           
+            let dos = 4>= 3; //true
+            let tres = 4 < 3; //false
+            let cuatro = 4 <= 3 ; //false
+            let cinco = 4 == 4; //true
+            let seis = 4 === 4; //true
+            let siete = 4 != 4; //false
+            let ocho = 4 !== 4; //false
+            let nueve = 4 != '4'; //true x
+            let diez = 4 == '4'; //true ?
+            let once = 4 === '4'; //false
+            let doce = "Python".length != "jargon".length; //false
+            console.log("---------------------------")
+            console.log("Ej 1: ", uno);
+            console.log("Ej 2: ",dos );
+            console.log("Ej 3: ",tres );
+            console.log("Ej 4: ",cuatro );
+            console.log("Ej 5: ",cinco );
+            console.log("Ej 6: ", seis);
+            console.log("Ej 7: ",siete );
+            console.log("Ej 8: ",ocho );
+            console.log("Ej 9: ",nueve );
+            console.log("Ej 10: ",diez );
+            console.log("Ej 11: ", once);
+            console.log("Ej 12: ", doce);
+            console.log("----------------------------")
+            //Ejs 6
+            let uno6s = 4 > 3 && 10 < 12; ///  true        
+            let dos6s = 4 > 3 && 10 > 12; // false
+            let tres6s = 4 > 3 || 10 < 12; /// true
+            let cuatro6s = 4 > 3 || 10 > 12 ; /// true
+            let cinco6s = !(4 > 3); //false
+            let seis6s = !(4 < 3); //true
+            let siete6s = !(false); ///true
+            let ocho6s = !(4 > 3 && 10 < 12); ///false
+            let nueve6s = !(4 > 3 && 10 > 12); ////true
+            let diez6s = !(4 === '4'); ////true
+            console.log("----------------------------");
+            console.log("Ej 1: ", uno6s);
+            console.log("Ej 2: ",dos6s );
+            console.log("Ej 3: ",tres6s );
+            console.log("Ej 4: ",cuatro6s );
+            console.log("Ej 5: ",cinco6s );
+            console.log("Ej 6: ", seis6s);
+            console.log("Ej 7: ",siete6s );
+            console.log("Ej 8: ",ocho6s );
+            console.log("Ej 9: ",nueve6s );
+            console.log("Ej 10: ",diez6s );
+            console.log("----------------------------");
+            //Ejs 7
+            console.log("¿Qué año es hoy? --> ", now.getFullYear());
+            console.log("¿Qué mes es hoy con un numero? --> ", now.getMonth() + 1);
+            console.log("¿Qué fecha es hoy? --> ",`${now.getDate()}/${now.getMonth()+1}/${now.getFullYear()}`);
+            console.log("¿Qué día es hoy con un número? --> ", now.getDay());
+            console.log("¿Cuál es la hora actual? --> ", now.getHours());
+            console.log("¿Cuántos minutos hay actualmente? --> ", now.getMinutes());
+            console.log("Número de segundos transcurridos desde el 1/01/1970 hasta ahora --> ", now.getTime());
+            console.log("----------------------------");
+            console.log("-----------Ejercicios nivel 2:-----------------");
+            //Ejercicios nivel 2;
+            //Ej 1
+            /*alert("Calculando el área de un triángulo");
+            let alturaTriangulo = prompt("Ingrese la altura --> ");
+            let baseTriangulo = prompt("Ingrese la base --> ");
+            let areaTriangulo = 0.5 * baseTriangulo * alturaTriangulo;
+            alert("El área de su triángulo es de --> " + areaTriangulo)*/
+            //----------------------------------------
+            //Ej 2
+            /*alert("Calculando el perímetro del triángulo");
+            let ladoA = parseInt(prompt("Ingrese el lado A --> "));
+            let ladoB = parseInt(prompt("Ingrese el lado B --> "));
+            let ladoC = parseInt(prompt("Ingrese el lado C --> "))
+            let perimetro = ladoA + ladoB + ladoC
+            alert("El perímetro de su triángulo es de --> " + perimetro);*/
+            //----------------------------------------
+            //Ej 3
+            /*alert("Calculando área y perímetro de un rectángulo");
+            let anchoRectang = parseInt(prompt("Ingrese al ancho --> "));
+            let largoRectang = parseInt(prompt("Ingrese al largo --> "));
+            let areaRect = largoRectang * anchoRectang;
+            let perRect = 2 * (largoRectang + anchoRectang);
+            alert("El área de su rectángulo es de --> " + areaRect);
+            alert("El perímetro de su rectángulo es de --> " + perRect);*/
+            //----------------------------------------
+            //Ej 4
+            /*alert("Calculando area y circunferencia de un círculo");
+            let radio = parseInt(prompt("Ingrese el radio de su círculo --> "));
+            let areaCirc = Math.PI * radio * radio;
+            let circunfCirc = 2 * Math.PI * radio;
+            alert("El área de su círculo es de --> " + areaCirc);
+            alert("La circunferencia de su círculo es de --> " + circunfCirc);*/
+            //----------------------------------------
+            //Ej 9
+            /*let horasTrabajo = parseInt(prompt("Ingrese las horas que trabaja por semana --> "));
+            let tarifaHrs = parseInt(prompt("Ingresa la tarifa por hora --> "));
+            let ganancia = horasTrabajo * tarifaHrs;
+            alert("Su ganancia semanal es de $" + ganancia)*/
+            //----------------------------------------
+            //Ej 10
+            /*let name = prompt("Ingrese su nombre --> ");
+            if(name.length > 7){
+                alert("Su nombre es largo");
+            }else{
+                alert("Su nombre es corto")
+            }*/
+            //----------------------------------------
+            //Ej 11
+            /*let name = prompt("Ingrese su nombre --> ");
+            let lastname = prompt("Ingrese su apellido --> ");
+            if(name.length > lastname.length){
+                alert("Su nombre es mas largo que su apellido")
+            }else{
+                alert("Su apellido es mas largo que su nombre")
+            }*/
+            //----------------------------------------
+            //Ej 12
+            /*let myEdad = 250;
+            let tuEdad = 25;
+            let calculo = myEdad - tuEdad;
+            console.log("Soy "+ calculo + " años mayor que tu")*/
+            //----------------------------------------
+            //Ej 13
+            /*let añoNac = parseInt(prompt("Ingrese su año de nacimiento --> "))
+            let edadConduc = now.getFullYear() - añoNac;
+            if(edadConduc >= 18){
+                alert("Tienes " + edadConduc + " años. Tenes edad suficiente para conducir");
+            }else{
+                alert("Tienes " + edadConduc + " años. No tenes edad suficiente para conducir");
+
+            }*/
+            //----------------------------------------
+            //Ej 15.1
+            console.log(`${year}-0${mes}-${dia} ${horas}:${mins}`);
+            //Ej 15.2
+            console.log(`${dia}-0${mes}-${year} ${horas}:${mins}`);
+            //Ej 15.3
+            console.log(`${dia}/0${mes}/${year} ${horas}:${mins}`);
+            //----------------------------------------
+            console.log("EJERCICIO NIVEL 3:");
+            console.log(`${year}-0${mes}-${dia} ${horas}:${mins}`);
+            
+            
+        </script>
+    </body>
+</html>
