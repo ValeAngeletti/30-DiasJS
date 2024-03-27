@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejs Dia 4</title>
+    </head>
+
+    <body>
+        <h1>Ejercicios dia 4:</h1>
+        <h2>En consola</h2>
+        <script>
+            //Ejercicios dia 4
+            //Nivel 1:
+            console.log("--------- Ejs Nivel 1 -----------");
+            //Ej1:
+            /*let edad = parseInt(prompt("Ingrese su edad: "));
+            if(edad >= 18){
+                alert("Tiene edad suficiente para conducir");
+            }else{
+                let edadAdecuada = 18 - edad;
+                alert("Te faltan " + edadAdecuada + " años para conducir");
+            }*/
+            //Ej 2
+            /*let edad = parseInt(prompt("Ingrese su edad: "));
+            let miEdad = 20;
+
+            if(edad > miEdad){
+                let difEdad= edad - miEdad;
+                alert("Eres " + difEdad + " mayor que yo")
+            }else if(miEdad > edad){
+                difEdad= miEdad - edad;
+                alert("Eres " + difEdad + " menor que yo");
+            }else{
+                alert("Tenemos la misma edad.")
+            }*/
+            //Ej 3
+            //Con if else
+            /*let a = 2;
+            let b = 3;
+
+            if(a > b){
+                alert("A es mayor que B");
+            }else{
+                alert("A es menor que B")
+            }
+
+            a > b ? console.log("A es mayor que B") : console.log("A es menor que B");*/
+            //Ej 4
+            /*let numero = parseInt(prompt("Ingrese un número: "));
+
+            if( numero % 2 === 0){
+                alert(numero + " es un numero PAR");
+            }else{
+                alert(numero + " es un numero IMPAR");
+            }*/
+            //EJERCICIOS NIVEL 2
+            //Ej 1:
+            /*let calificacion = parseInt(prompt("Ingrese su calificación: "));
+
+            switch(true){
+                case calificacion >= 80 && calificacion <= 100:
+                    alert("Su calificación es A");
+                    console.log("si");
+                    break;
+                case calificacion >= 70 && calificacion <= 89:
+                    alert("Su calificación es B");
+                    break;
+                case calificacion >= 60 && calificacion <= 69:
+                    alert("Su calificación es C");
+                    break;
+                case calificacion >= 50 && calificacion <= 59:
+                    alert("Su calificación es D");
+                    break;
+                case calificacion >= 0 && calificacion <= 49:
+                    alert("Su calificación es F");
+                    break;
+                default:
+                    alert("Calificación no válida")
+            }*/
+            //Ej 2:
+            /*let estacion = prompt("Ingrese el mes en el que se encuentra: ").toLowerCase()
+
+            switch(estacion){
+                case "septiembre":
+                case "octubre":
+                case "noviembre":
+                    alert("La temporada es Otoño");
+                    break;
+                case "diciembre":
+                case "enero":
+                case "febrero":
+                    alert("La temporada es Invierno");
+                    break;
+                case "marzo":
+                case "abril":
+                case "mayo":
+                    alert("La temporada es Primavera");
+                    break;
+                case "junio":
+                case "julio":
+                case "agosto":
+                    alert("La temporada es Verano");
+                    break;
+                default:
+                    alert("Mes inválido")
+            }*/
+            //Ej 3
+            /*let dia = prompt("Ingrese un dia: ").toLowerCase();
+
+            switch(dia){
+                case "lunes":
+                case "martes":
+                case "miercoles":
+                case "jueves":
+                case "viernes":
+                    console.log(`El ${dia} es un día laborable`);
+                    break;
+                case "sabado":
+                case "domingo":
+                    console.log(`El ${dia} es fin de semana`);
+                    break;
+                default:
+                    console.log("dia invalido")
+            }*/
+            //EJERCICIOS NIVEL 3
+            //Ej 1 y 2
+            let mes = prompt("Introduce un mes: ").toLowerCase();
+
+            switch(mes){
+                case "enero":
+                    alert("Enero tiene 31 dias");
+                    break;
+                case "febrero":
+                    alert("Febrero tiene 28/29 dias");
+                    break;
+                case "marzo":
+                    alert("Marzo tiene 31 dias");
+                    break;
+                case "abril":
+                    alert("Abril tiene 30 dias");
+                    break;
+                case "mayo":
+                    alert("Mayo tiene 31 dias");
+                    break;
+                case "junio":
+                    alert("Junio tiene 30 dias");
+                    break;
+                case "julio":
+                    alert("Julio tiene 31 dias");
+                    break;
+                case "agosto":
+                    alert("Agosto tiene 31 dias");
+                    break;
+                case "septiembre":
+                    alert("Septiembre tiene 30 dias");
+                    break;
+                case "octubre":
+                    alert("Octubre tiene 31 dias");
+                    break;
+                case "noviembre":
+                    alert("Noviembre tiene 30 dias");
+                    break;
+                case "diciembre":
+                    alert("Diciembre tiene 31 dias");
+                    break;
+                default:
+                    alert("Mes incorrecto");
+                    break;
+            }
+
+        </script>
+    </body>
+</html>
